@@ -230,9 +230,7 @@ Enlace del proyecto: [https://github.com/tu-usuario/acordes-api](https://github.
 
 ## 🙏 Reconocimientos
 
-- Investigadores en Music Information Retrieval
-- Universidad Complutense de Madrid
-- Comunidad de FastAPI
+- Bunks, C., Dixon, S., Weyde, T. and Di Giorgi, B., 2023. Modeling Harmonic Similarity for Jazz Using Co-occurrence Vectors and the Membrane Area. In *Proceedings of the International Society for Music Information Retrieval Conference (ISMIR)*, Milan, Italy, 2023.
 
 ---
 
