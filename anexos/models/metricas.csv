@@ -1,0 +1,14 @@
+Modelo,Dataset,Top@1,Top@3,Top@5,MRR,PPL,loss
+KN (trigramas) v1,songdb_funcional_v3,0.4043,0.6418,0.7382,0.5545,,
+HMM (T/S/D) v1,songdb_funcional_v3,0.2283,0.4085,0.5249,0.377,,
+KN GridSearch v1,songdb_funcional_v3,0.4219,0.6526,0.7445,0.5667,,
+GRU v1,songdb_funcional_v3,0.4273,0.6698,0.7671,0.579,8.5608,2.1472
+LSTM v1,songdb_funcional_v3,0.4345,0.6787,0.768,0.584,8.3556,2.1229
+LSTM RandomSearch v1,songdb_funcional_v3,0.4412,0.6897,0.7822,0.5923,7.9589,2.0743
+KN (trigramas) v2,songdb_funcional_v4,0.4152,0.6516,0.7375,0.5605,,
+HMM (T/S/D) v2,songdb_funcional_v4,0.1916,0.4189,0.5124,0.3458,,
+KN GridSearch v2,songdb_funcional_v4,0.4329,0.661,0.7408,0.5728,,
+GRU v2,songdb_funcional_v4,0.432,0.6775,0.7616,0.5797,8.9978,2.197
+LSTM v2,songdb_funcional_v4,0.4306,0.6829,0.7669,0.5809,8.7552,2.1697
+LSTM RandomSearch v2,songdb_funcional_v4,0.4456,0.6927,0.7715,0.5914,8.4259,2.1313
+LSTM Fine-tuning v3,songdb_funcional_v4,0.4504,0.6937,0.7762,0.5957,9.5073,2.2521

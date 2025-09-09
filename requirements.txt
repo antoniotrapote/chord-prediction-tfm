@@ -1,0 +1,16 @@
+# Dependencias principales para la API de predicción de acordes
+fastapi>=0.104.0
+uvicorn>=0.24.0
+pydantic>=2.4.0
+joblib>=1.3.0
+
+# Dependecias necesarias para ejecutar los notebooks en anexos
+jupyterlab>=4.0.0
+ipykernel>=6.0.0
+
+# Dependencias para manejo de datos
+pandas>=2.3.2
+numpy>=2.3.2
+
+# Dependencias para visualización
+matplotlib>=3.7.0

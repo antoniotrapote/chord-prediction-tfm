@@ -1,0 +1,14 @@
+Title = Love for Sale
+ComposedBy = Cole Porter
+DBKeySig = Bb
+TimeSig = 4 4
+Bars = 32
+ EbM7 | EbM7 | Bbm7 | Bbm7 |
+ EbM7 | EbM7 | Bbm7 | Bbm7 |
+ Ebm7 | Ab7 | DbM7 | Gb7 |
+ Cm7 | F7alt | Bbm7 | Bbm7 |
+ EbM7 | EbM7 | BbM7 | BbM7 |
+ EbM7 | EbM7 | BbM7 | BbM7 |
+ Ebm7 | Ab7 | DbM7 | Gb7 |
+ Cm7 | F7+ | Bbm7 | Bbm7 |
+
