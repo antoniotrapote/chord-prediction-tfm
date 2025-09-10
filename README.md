@@ -1,4 +1,4 @@
-# 🎵 Sistema de Predicción de Acordes Musicales
+# Sistema de Predicción de Acordes Musicales
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104%2B-009688)](https://fastapi.tiangolo.com/)
@@ -8,13 +8,13 @@ API REST para predicción inteligente de secuencias de acordes musicales basada 
 
 ## Características
 
-- **🎼 Análisis automático de tonalidad** - Detecta automáticamente la tonalidad de una secuencia de acordes
-- **🔮 Predicción de acordes** - Sugiere los próximos acordes más probables
-- **🔄 Conversión de formatos** - Convierte entre cifrado americano y notación funcional
-- **📚 API REST completa** - Documentación interactiva con Swagger
-- **⚡ Reranking inteligente** - Penalización de repeticiones y filtrado contextual
+- **Análisis automático de tonalidad** - Detecta automáticamente la tonalidad de una secuencia de acordes
+- **Predicción de acordes** - Sugiere los próximos acordes más probables
+- **Conversión de formatos** - Convierte entre cifrado americano y notación funcional
+- **API REST completa** - Documentación interactiva con Swagger
+- **Reranking inteligente** - Penalización de repeticiones y filtrado contextual
 
-## 🚀 Instalación Rápida
+## Instalación Rápida
 
 ### Prerrequisitos
 - Python 3.8 o superior
@@ -54,7 +54,7 @@ uvicorn app:app --reload --host 127.0.0.1 --port 8000
 
 ¡Listo! La API estará disponible en: **http://127.0.0.1:8000**
 
-## 📖 Uso de la API
+## Uso de la API
 
 ### Documentación interactiva
 - **Swagger UI:** http://127.0.0.1:8000/docs
@@ -106,7 +106,7 @@ curl -X POST "http://127.0.0.1:8000/predict" \
      }'
 ```
 
-## 🎼 Formatos Soportados
+## Formatos Soportados
 
 ### Cifrado Americano
 ```
@@ -118,7 +118,7 @@ Am, F, C, G7, Bm7b5, E7, Cmaj7, Dm7, etc.
 i, bVI, bIII, V7, iiø, V/v, I, ii7, etc.
 ```
 
-## ⚙️ Parámetros de la API
+## Parámetros de la API
 
 | Parámetro | Tipo | Descripción | Valor por defecto |
 |-----------|------|-------------|-------------------|
@@ -132,7 +132,7 @@ i, bVI, bIII, V7, iiø, V/v, I, ii7, etc.
 | `beta_filter` | float | Peso del filtro diatónico/funcional | `0.15` |
 | `hard_filter` | bool | Aplicar filtro estricto | `true` |
 
-## 🧪 Ejemplos de Respuesta
+## Ejemplos de Respuesta
 
 ```json
 {
@@ -166,7 +166,7 @@ i, bVI, bIII, V7, iiø, V/v, I, ii7, etc.
 }
 ```
 
-## 🏗️ Arquitectura del Proyecto
+## Arquitectura del Proyecto
 
 ```
 acordes-api/
@@ -190,7 +190,7 @@ acordes-api/
 
 ```
 
-## 🔬 Tecnologías Utilizadas
+## Tecnologías Utilizadas (en la versión final)
 
 - **[FastAPI](https://fastapi.tiangolo.com/)** - Framework web moderno y rápido
 - **[Pydantic](https://pydantic-docs.helpmanual.io/)** - Validación de datos
@@ -198,7 +198,7 @@ acordes-api/
 - **[joblib](https://joblib.readthedocs.io/)** - Serialización de modelos
 - **Algoritmo Kneser-Ney** - Suavizado de n-gramas
 
-## 🎓 Contexto Académico
+## Contexto Académico
 
 Este proyecto forma parte de mi **Trabajo de Fin de Máster** en el Máster Data Science, Big Data & Business Analytics 2024-2025 de la Universidad Complutense de Madrid (UCM).
 
@@ -208,7 +208,7 @@ Este proyecto forma parte de mi **Trabajo de Fin de Máster** en el Máster Data
 3. Proporcionar herramientas de análisis armónico automatizado
 4. Evaluar la efectividad de diferentes estrategias de filtrado
 
-## 🤝 Contribuciones
+## Contribuciones
 
 Las contribuciones serán bienvenidas tras la evaluación del proyecto. Para cambios importantes:
 
@@ -218,20 +218,23 @@ Las contribuciones serán bienvenidas tras la evaluación del proyecto. Para cam
 4. Push a la rama (`git push origin feature/AmazingFeature`)
 5. Abre un Pull Request
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
 
-## 📞 Contacto
+## Contacto
 
 **Antonio Trapote** - [antoniotrapote@gmail.com](mailto:antoniotrapote@gmail.com)
 
 Enlace del proyecto: [https://github.com/tu-usuario/acordes-api](https://github.com/tu-usuario/acordes-api)
 
-## 🙏 Reconocimientos
+## Reconocimientos
 
-- Bunks, C., Dixon, S., Weyde, T. and Di Giorgi, B., 2023. Modeling Harmonic Similarity for Jazz Using Co-occurrence Vectors and the Membrane Area. In *Proceedings of the International Society for Music Information Retrieval Conference (ISMIR)*, Milan, Italy, 2023.
+A los investigadores C. Bunks, S. Dixon, T. Weyde y B. Di Giorgi por compartir la base de datos **SongDB** en el repositorio [Jazz-Chord-Progressions-Corpus](https://github.com/carey-bunks/Jazz-Chord-Progressions-Corpus).
+
+> Bunks, C., Dixon, S., Weyde, T. and Di Giorgi, B., 2023. *Modeling Harmonic Similarity for Jazz Using Co-occurrence Vectors and the Membrane Area*. In Proceedings of the International Society for Music Information Retrieval Conference (ISMIR), Milan, Italy, 2023.
+
 
 ---
 
-⭐ ¡Si este proyecto te resulta útil, considera darle una estrella en GitHub!
+¡Si este proyecto te resulta útil, considera darle una estrella en GitHub! ⭐ 
