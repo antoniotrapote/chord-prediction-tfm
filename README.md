@@ -226,8 +226,6 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 **Antonio Trapote** - [antoniotrapote@gmail.com](mailto:antoniotrapote@gmail.com)
 
-Enlace del proyecto: [https://github.com/tu-usuario/acordes-api](https://github.com/tu-usuario/acordes-api)
-
 ## Reconocimientos
 
 A los investigadores C. Bunks, S. Dixon, T. Weyde y B. Di Giorgi por compartir la base de datos **SongDB** en el repositorio [Jazz-Chord-Progressions-Corpus](https://github.com/carey-bunks/Jazz-Chord-Progressions-Corpus).
