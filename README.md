@@ -224,7 +224,9 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 ## Contacto
 
-**Antonio Trapote** - [antoniotrapote@gmail.com](mailto:antoniotrapote@gmail.com)
+## Contacto
+[antoniotrapote@gmail.com](mailto:antoniotrapote@gmail.com) · [LinkedIn](https://www.linkedin.com/in/antonio-trapote/)
+
 
 ## Reconocimientos
 
