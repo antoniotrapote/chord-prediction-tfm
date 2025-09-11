@@ -1,4 +1,5 @@
-# app.py
+"""API REST para el modelo de predicción de acordes."""
+
 import sys
 import os
 from typing import List, Literal, Optional
@@ -10,7 +11,7 @@ from pydantic import BaseModel, Field
 import joblib
 
 
-# === Tu código/utilidades existentes ===
+# Importación de funciones propias
 from utils.chord_norm import (
     parse_sequence, sequence_to_roman, roman_to_sequence,
     detect_key_for_sequence, PITCHES_FLAT
@@ -19,6 +20,7 @@ from utils.rerank_functions import rerank
 from utils.pred_functions import topk_next
 
 from model.kn_model import KNInterpolatedNGram
+
 
 # =========================
 # Config básica
@@ -30,7 +32,7 @@ app = FastAPI(title="ChordSuggest API", version="0.1.0")
 
 
 # =========================
-# Carga perezosa del modelo
+# Carga lazy del modelo
 # =========================
 
 # Hack para resolver el problema de pickle con __main__
@@ -48,6 +50,9 @@ def get_model() -> KNInterpolatedNGram:
 # =========================
 
 class PredictRequest(BaseModel):
+    """
+    Esquema para la solicitud de predicciónes.
+    """
     sequence: str = Field(
         ..., description="Secuencia en cifrado americano, p.ej. 'Bm7b5 E7 Am Dm7 G7 C'")
     k: int = Field(5, description="Número de predicciones a devolver")
@@ -68,12 +73,27 @@ class PredictRequest(BaseModel):
 
 
 class PredictionItem(BaseModel):
+    """
+    Representa una sugerencia de acorde en la predicción.
+    - roman: acorde en notación funcional (romanos).
+    - american: acorde en cifrado americano.
+    - prob: probabilidad estimada por el modelo.
+    """
     roman: str
     american: str
     prob: float
 
 
 class PredictResponse(BaseModel):
+    """
+    Respuesta completa de la API de predicción.
+    - input_sequence: secuencia original introducida por el usuario.
+    - parsed_chords: acordes parseados y normalizados.
+    - detected_key: tonalidad estimada (tónica, modo, score).
+    - roman_sequence: secuencia en notación funcional (romanos).
+    - context_used: acordes usados como contexto para la predicción.
+    - predictions: lista de sugerencias (cada una es un PredictionItem).
+    """
     input_sequence: str
     parsed_chords: List[str]
     detected_key: dict
@@ -87,11 +107,13 @@ class PredictResponse(BaseModel):
 # =========================
 @app.get("/health")
 def health():
+    """Comprobación de salud del servicio."""
     return {"status": "ok"}
 
 
 @app.post("/predict", response_model=PredictResponse)
 def predict(req: PredictRequest):
+    """Función principal de predicción."""
     model = get_model()
 
     # 1) Parseo
