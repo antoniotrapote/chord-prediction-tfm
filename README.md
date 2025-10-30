@@ -2,7 +2,8 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104%2B-009688)](https://fastapi.tiangolo.com/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-black?logo=creativecommons&logoColor=white)](LICENSE)
+
 
 API REST para predicción inteligente de secuencias de acordes musicales basada en modelos de n-gramas con suavizado Kneser-Ney.
 
@@ -220,7 +221,14 @@ Las contribuciones serán bienvenidas tras la evaluación del proyecto. Para cam
 
 ## Licencia
 
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+Este proyecto está bajo la Licencia **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International** (CC BY-NC-SA 4.0) - ver el archivo [LICENSE](LICENSE) para más detalles.
+
+**Resumen de términos:**
+- ✓ Puedes compartir y adaptar este material con propósitos no comerciales
+- ✓ Debes dar crédito al autor original
+- ✓ Si remezclas o transformas el material, debes distribuirlo bajo la misma licencia
+
+Para más información, visita: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 ## Contacto
 
